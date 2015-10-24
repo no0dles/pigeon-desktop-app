@@ -28,11 +28,13 @@
     "electron-app"
   ],
   "dependencies": {
-    "electron-debug": "^0.2.1"
+    "akeypair": "^0.2.4",
+    "bluebird": "^2.10.2"
   },
   "devDependencies": {
     "electron-packager": "^5.0.0",
     "electron-prebuilt": "^0.34.0",
+    "electron-debug": "^0.2.1",
     "xo": "^0.9.0"
   },
   "xo": {
