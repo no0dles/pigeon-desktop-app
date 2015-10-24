@@ -1,0 +1,31 @@
+<div class="chats">
+    <div class="search-box">
+        <input type="text" class="form-control " placeholder="Search">
+    </div>
+    <div class="chat-list">
+        <ul class="media-list">
+            <li class="media" ng-repeat="user in users">
+                <div class="media-left">
+                    <a href="#">
+                        <avatar eyes="user.avatar.eyes"
+                                nose="user.avatar.nose"
+                                mouth="user.avatar.mouth"
+                                color="user.avatar.color"></avatar>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{user.username}}</h4>
+                    <i>last message</i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="messages">
+    <div class="header">
+
+    </div>
+    <div class="message-list">
+
+    </div>
+</div>

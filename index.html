@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pigeon prototype</title>
+
+		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+
+		<link href="index.css" rel="stylesheet">
+
+		<script>
+			var $ = jQuery = require("./bower_components/jquery/dist//jquery.min.js");
+		</script>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+		<script>
+			var Slider = require('./bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js');
+		</script>
+
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="bower_components/angular-bootstrap-slider/slider.js"></script>
+
+		<script src="app/avatar/module.js"></script>
+		<script src="app/avatar/directive.js"></script>
+		<link href="app/avatar/style.css" rel="stylesheet">
+
+		<script src="app/avatar/editor/module.js"></script>
+		<script src="app/avatar/editor/directive.js"></script>
+		<link href="app/avatar/editor/style.css" rel="stylesheet">
+
+		<script src="app/avatar/editor/selector/module.js"></script>
+		<script src="app/avatar/editor/selector/directive.js"></script>
+		<link href="app/avatar/editor/selector/style.css" rel="stylesheet">
+
+		<script src="app/registration/module.js"></script>
+		<script src="app/registration/controller.js"></script>
+		<link href="app/registration/style.css" rel="stylesheet">
+
+		<script src="app/chat/module.js"></script>
+		<script src="app/chat/controller.js"></script>
+		<link href="app/chat/style.css" rel="stylesheet">
+
+		<script src="app/settings/module.js"></script>
+		<script src="app/settings/controller.js"></script>
+		<link href="app/settings/style.css" rel="stylesheet">
+
+		<script src="app.js"></script>
+
+	</head>
+	<body ng-app="pigeon">
+		<div class="view" ui-view></div>
+	</body>
+</html>

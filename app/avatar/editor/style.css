@@ -1,0 +1,17 @@
+.avatar-editor {
+	margin-right: 30px;
+}
+
+.avatar-table td {
+	vertical-align: middle;
+}
+
+.avatar-table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.btn-randomize {
+	margin-left: 16px;
+	width: calc(100% - 40px);
+}

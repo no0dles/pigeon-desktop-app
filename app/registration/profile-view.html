@@ -1,0 +1,27 @@
+<div class="container">
+	<section>
+		<div class="prev" ui-sref="registration.welcome">
+			<span class="glyphicon glyphicon-menu-left"></span>
+		</div>
+
+		<h2>Profile</h2>
+		<avatar-editor
+				eyes="formData.avatar.eyes"
+				nose="formData.avatar.nose"
+				mouth="formData.avatar.mouth"
+				color="formData.avatar.color"></avatar-editor>
+
+
+		<div class="form-group">
+			<input type="text" class="lowercase form-control" id="username" placeholder="Username" pattern="[a-zA-Z0-9_-]{3,25}">
+		</div>
+
+
+		<div class="next" ui-sref="registration.security">
+			<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</section>
+</div>
+
+
+

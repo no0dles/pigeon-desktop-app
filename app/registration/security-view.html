@@ -1,0 +1,66 @@
+<div class="container">
+	<section>
+		<div class="prev" ui-sref="registration.profile">
+			<span class="glyphicon glyphicon-menu-left"></span>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-5">
+				<div class="row text-center">
+					<h2>Security</h2>
+
+					<slider ng-model="formData.security" min="0" step="1"
+							max="3" tooltip="hide"></slider>
+
+					{{getSecurity(formData.security)}}
+				</div>
+				<div class="row">
+
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="row text-center">
+					<h2>vs</h2>
+				</div>
+			</div>
+			<div class="col-xs-5">
+				<div class="row text-center">
+					<h2>Performance</h2>
+
+
+					<slider ng-model="formData.performance" min="0" step="1"
+							max="3" tooltip="hide"></slider>
+
+					{{getPerformance(formData.performance)}}
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 20px; margin-bottom: 20px">
+			<div class="col-xs-12">
+				<blockquote>
+					<h3>Explanation ({{formData.keySize}}-bit)</h3>
+					<p>{{getExplanation(formData.keySize)}}</p>
+				</blockquote>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="progress" style="margin-bottom: 5px">
+					<div class="progress-bar progress-bar-success progress-bar-striped" ng-class="{'active': !formData.key}" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+					</div>
+				</div>
+				<p class="text-center">
+					<i ng-if="!formData.key">generating secret {{formData.keySize}}-bit key ...</i>
+					<i ng-if="formData.key">generated secret {{formData.keySize}}-bit key</i>
+				</p>
+			</div>
+		</div>
+
+		<div class="next" ng-click="register()">
+			<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</section>
+</div>
+
+
+

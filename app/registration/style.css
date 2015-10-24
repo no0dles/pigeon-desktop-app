@@ -1,0 +1,72 @@
+header, section {
+	position: absolute;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+}
+
+header .prev, section .prev, header .next, section .next {
+	position: absolute;
+	top: 50%;
+	font-size: 20pt;
+	height: 100px;
+	width: 40px;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.5);
+	line-height: 100px;
+	padding-left: 7px;
+	margin-top: -20px;
+	cursor: pointer;
+}
+header .prev, section .prev {
+	left: -60px;
+}
+header .next, section .next {
+	right: -60px;
+}
+
+header {
+	text-align: center;
+	height: 250px;
+	margin-top: -125px;
+}
+
+section {
+	height: 400px;
+	margin-top: -200px;
+}
+
+h1, h2, h3 {
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+header footer, section footer {
+	margin-top: 30px;
+}
+
+.slider.slider-horizontal .slider-track {
+	height: 2px;
+}
+.slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
+	border-radius: 100%;
+	background: #fff;
+	margin-top: -8px;
+}
+.slider.slider-horizontal .slider-selection {
+	background: #007aff;
+}
+.slider.slider-horizontal .slider-track-high {
+	background: #959799;
+}

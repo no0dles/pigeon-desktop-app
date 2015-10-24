@@ -1,0 +1,20 @@
+<div>
+	<table class="avatar-table">
+		<colgroup>
+			<col width="180"/>
+			<col width="*"/>
+		</colgroup>
+		<tr>
+			<td>
+				<avatar class="avatar avatar-editor avatar-medium" eyes="eyes" nose="nose" mouth="mouth" color="color"></avatar>
+			</td>
+			<td>
+				<selector value="eyes" values="availableEyes"/>
+				<selector value="nose" values="availableNoses"/>
+				<selector value="mouth" values="availableMouths"/>
+				<selector value="color" values="availableColors"/>
+				<button class="btn btn-sm btn-primary btn-randomize" ng-click="randomize()">Randomize</button>
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,67 @@
+
+
+.chats {
+	width: 240px;
+	height: 100%;
+	background: #222;
+	color: #fff;
+	float:left;
+}
+
+.chats .search-box {
+	padding: 15px;
+	height: 56px;
+}
+
+.chats .search-box input {
+	background: #151515;
+}
+
+.chats .chat-list {
+	position: relative;
+	height: calc(100% - 56px);
+	overflow-y: scroll;
+}
+
+.chats .chat-list .media-list {
+	margin-bottom: 0;
+}
+
+.chats li {
+	padding: 10px 15px;
+}
+
+.chats li h4 {
+	font-weight: 200;
+	margin-top: 5px;
+}
+
+.chats li i {
+	font-weight: 100;
+}
+
+.chats .media {
+	margin-top: 0;
+}
+
+.chats .media:nth-child(even) {
+	background: #222;
+}
+.chats .media:nth-child(odd) {
+	background: #2f2f2f;
+}
+
+.messages {
+	float:left;
+	width: calc(100% - 240px);
+	height: 100%;
+}
+
+.messages .header {
+	height: 56px;
+	background: #222;
+}
+
+.messages .message-list {
+	height: calc(100% - 56px);
+}
